@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="example-title">
+    <h1>Flex Training</h1>
+  </div>
+  <div>
+    <h2>Properties added to the container</h2>
+  </div>
+  <div class="big-container">
+    <div class="display-flex">
+      <h3>Flex-Direction: Displays items in rows or columns</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Row</h4>
+        </div>
+        <div class="items-container">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Columns</h4>
+        </div>
+        <div class="items-container column">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Flex-Wrap: makes it respect the container size and breaks the line</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Wrap</h4>
+        </div>
+        <div class="items-container wrap">
+          <div class="item">Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1</div>
+          <div class="item">Text2Text2Text2Text2Text2Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Nowrap</h4>
+        </div>
+        <div class="items-container">
+          <div class="item">Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1Text1</div>
+          <div class="item">Text2Text2Text2Text2Text2Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Justify-Content: How to distribute space around the items</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Start</h4>
+        </div>
+        <div class="items-container justify-start">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>End</h4>
+        </div>
+        <div class="items-container justify-end">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Center</h4>
+        </div>
+        <div class="items-container justify-center">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Space Between</h4>
+        </div>
+        <div class="items-container justify-space-between">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Space Evenly</h4>
+        </div>
+        <div class="items-container justify-space-evenly">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Space Around</h4>
+        </div>
+        <div class="items-container justify-space-around">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Align-items: Align the items like the justify-content but in the perpendicular axis</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Start</h4>
+        </div>
+        <div class="items-container align-items-start">
+          <div class="item">Text1</div>
+          <div class="item-big">Text2</div>
+          <div class="item-medium">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>End</h4>
+        </div>
+        <div class="items-container align-items-end">
+          <div class="item">Text1</div>
+          <div class="item-big">Text2</div>
+          <div class="item-medium">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Center</h4>
+        </div>
+        <div class="items-container align-items-center">
+          <div class="item">Text1</div>
+          <div class="item-big">Text2</div>
+          <div class="item-medium">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Strech</h4>
+        </div>
+        <div class="items-container align-items-strech">
+          <div class="item">Text1</div>
+          <div class="item-big">Text2</div>
+          <div class="item-medium">Text3 (has height defined so doesn't work)</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Baseline(based on typography)</h4>
+        </div>
+        <div class="items-container align-items-baseline">
+          <div class="item" style="padding-top: 10px;">Text1</div>
+          <div class="item-big">Text2</div>
+          <div class="item-medium">Text3</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Align-content: When the items wrap, kind of justifies the lines created</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Start</h4>
+        </div>
+        <div class="items-container-bigger wrap align-content-start">
+          <div class="item-wide">Text1</div>
+          <div class="item-wide">Text2</div>
+          <div class="item-wide">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>End</h4>
+        </div>
+        <div class="items-container-bigger wrap align-content-end">
+          <div class="item-wide">Text1</div>
+          <div class="item-wide">Text2</div>
+          <div class="item-wide">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Center</h4>
+        </div>
+        <div class="items-container-bigger wrap align-content-center">
+          <div class="item-wide">Text1</div>
+          <div class="item-wide">Text2</div>
+          <div class="item-wide">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Strech</h4>
+        </div>
+        <div class="items-container-bigger wrap align-content-strech">
+          <div class="item-wide">Text1</div>
+          <div class="item-wide">Text2</div>
+          <div class="item-wide">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Space Between</h4>
+        </div>
+        <div class="items-container-bigger wrap align-content-space-between">
+          <div class="item-wide">Text1</div>
+          <div class="item-wide">Text2</div>
+          <div class="item-wide">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Space Around</h4>
+        </div>
+        <div class="items-container-bigger wrap align-content-space-around">
+          <div class="item-wide">Text1</div>
+          <div class="item-wide">Text2</div>
+          <div class="item-wide">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Space Evenly</h4>
+        </div>
+        <div class="items-container-bigger wrap align-content-space-evenly">
+          <div class="item-wide">Text1</div>
+          <div class="item-wide">Text2</div>
+          <div class="item-wide">Text3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>Properties added to the items</h2>
+  </div>
+  <div class="big-container">
+    <div class="display-flex">
+      <h3>Flex-Grow: Items grow to the maximum possible of the container proportionally to the number defined</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Grow 0</h4>
+        </div>
+        <div class="items-container">
+          <div class="item">Text1</div>
+          <div class="item">Text2</div>
+          <div class="item">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Grow 1</h4>
+        </div>
+        <div class="items-container">
+          <div class="item grow-1">Text1Text1Text1Text1Text1Text1</div>
+          <div class="item grow-1">Text2</div>
+          <div class="item grow-1">Text3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Grow with multiple values</h4>
+        </div>
+        <div class="items-container">
+          <div class="item grow-1">grow-1</div>
+          <div class="item grow-3">grow-3</div>
+          <div class="item">grow-0</div>
+          <div class="item grow-2">grow-2</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Flex-basis: Indicates the initial item size</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Basis auto and grow (all the items will have the same extra space times the grow value)</h4>
+        </div>
+        <div class="items-container">
+          <div class="item grow-1">grow-1</div>
+          <div class="item grow-2">grow-2</div>
+          <div class="item grow-1 basis-auto-width">grow-1(has width)</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Basis 0 and grow (all the items will have the same width times the grow value, items too big will expand and only min-width works)</h4>
+        </div>
+        <div class="items-container">
+          <div class="item grow-1 basis-zero">Text1</div>
+          <div class="item grow-1 basis-zero">Text2</div>
+          <div class="item grow-1 basis-zero">ThisIsAVeryBigText</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Basis with a number or percentage, kinda of works like max-width and will get smaller if necessary</h4>
+        </div>
+        <div class="items-container">
+          <div class="item basis-100">basis100</div>
+          <div class="item basis-10">Text2</div>
+          <div class="item basis-500">basis500</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Flex-shrink: Indicates the shrink item capacity</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Shrink with a number and grow allows the item to reduce proportionally to that number(respecting width or flex-basis defined)</h4>
+        </div>
+        <div class="items-container">
+          <div class="item grow-1 shrink-1">ItemWithShrink1</div>
+          <div class="item grow-1 shrink-1 basis-500">ItemWithBasis500</div>
+          <div class="item grow-1 shrink-3">Shrink3</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Shrink 0 will make items not shrink, independent from the container size </h4>
+        </div>
+        <div class="items-container">
+          <div class="item shrink-0">Text1</div>
+          <div class="item shrink-0">Text2</div>
+          <div class="item shrink-0">ThisIsAVeryBigText</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Flex: Shortcut to grow, shrink and basis at the same time.</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Flex: 1 defines grow: 1, shrink: 1 and basis 0</h4>
+        </div>
+        <div class="items-container">
+          <div class="item flex-1">Item</div>
+          <div class="item flex-1">Item</div>
+          <div class="item flex-1">Item</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Flex: 2 defines grow: 2, shrink: 1 and basis 0</h4>
+        </div>
+        <div class="items-container">
+          <div class="item flex-2">ItemFlex2VeryBig</div>
+          <div class="item flex-1">ItemFlex1</div>
+          <div class="item flex-1">Item</div>
+        </div>
+      </div>
+      <div class="example">
+        <div class="example-title">
+          <h4>Flex: 3 2 200px defines grow: 3, shrink: 2 and basis 200px</h4>
+        </div>
+        <div class="items-container">
+          <div class="item flex-3-2-200">Item</div>
+          <div class="item flex-3-2-200">Item</div>
+          <div class="item flex-3-2-200">Item</div>
+        </div>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="display-flex">
+      <h3>Order: defines the order of the elements.</h3>
+    </div>
+    <div class="example-container">
+      <div class="example">
+        <div class="example-title">
+          <h4>Order: number</h4>
+        </div>
+        <div class="items-container">
+          <div class="item order-2">Item1</div>
+          <div class="item order-0">Item2</div>
+          <div class="item order-1">Item3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
